@@ -20,6 +20,6 @@
     "marked": "^4.1.0"
   },
   "devDependencies": {
-    "serve": "^14.0.1"
+    "serve": "^14.1.2"
   }
 }
