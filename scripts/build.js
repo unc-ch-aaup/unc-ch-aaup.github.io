@@ -8,6 +8,7 @@ const { DateTime } = require('luxon')
 const { Feed } = require('feed')
 
 const config = require('../site.config')
+config.posts = {recent: [], all: []}
 
 const srcPath = './src'
 const outPath = config.build.outputPath
@@ -17,8 +18,8 @@ fs.copy(`${srcPath}/assets`, `${outPath}/assets`)
 fs.copy(`${srcPath}/favicons`, `${outPath}/`)
 
 const posts = glob.sync('**/*.md', {cwd: `${srcPath}/posts`})
-config.posts = {recent: [], all: []}
-posts.reverse().forEach((post, i) => {
+posts.sort().reverse()
+posts.forEach((post, i) => {
   const postFilename = `${srcPath}/posts/${post}`
   const postData = frontMatter(fs.readFileSync(postFilename, 'utf-8'))
   const postDate = path.parse(post).name
