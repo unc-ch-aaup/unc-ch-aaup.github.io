@@ -1,6 +1,7 @@
 #! /bin/bash
 
 rm -rf site/.git
+echo "unc-ch-aaup.org" > site/CNAME
 git -C site init
 git -C site add .
 git -C site commit -m "Generated on $(date)"
