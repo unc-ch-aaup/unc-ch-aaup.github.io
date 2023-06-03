@@ -24,7 +24,7 @@ posts.forEach((post, i) => {
   const postData = frontMatter(fs.readFileSync(postFilename, 'utf-8'))
   const postDate = path.parse(post).name
   const postObject = {
-    body: marked(postData.body),
+    body: marked(postData.body, config.markdown),
     date: {
       iso: postDate,
       pretty: DateTime.fromISO(postDate).toLocaleString(DateTime.DATE_FULL)
@@ -54,8 +54,7 @@ pages.forEach(page => {
   switch (pagePath.ext) {
 
   case '.md':
-    main = marked(pageData.body)
-    break
+    main = marked(pageData.body, config.markdown)
 
   case '.ejs':
     main = ejs.render(

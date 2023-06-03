@@ -30,5 +30,9 @@ module.exports = {
     recentPosts: 3,
     feedPosts: 10,
     postHour: 8
+  },
+  markdown: {
+    mangle: false,
+    headerIds: false,
   }
 }
