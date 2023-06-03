@@ -1,0 +1,11 @@
+#! /bin/bash
+
+read -rp 'Title: ' title
+
+cat << EOF > "src/posts/$(date -I).md"
+---
+title: $title
+---
+
+
+EOF
