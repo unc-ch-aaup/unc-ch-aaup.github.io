@@ -24,6 +24,12 @@ main {
 a {
     text-decoration: none;
 }
+a.more {
+    float: right;
+}
+ol.alpha {
+    list-style: upper-latin;
+}
 ul {
     list-style-type: none;
     margin: 0;
