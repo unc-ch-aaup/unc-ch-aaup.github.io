@@ -16,7 +16,7 @@
     "front-matter": "^4.0.2",
     "fs-extra": "^11.1.1",
     "glob": "^10.3.4",
-    "luxon": "^3.3.0",
+    "luxon": "^3.5.0",
     "marked": "^9.0.3"
   },
   "devDependencies": {
