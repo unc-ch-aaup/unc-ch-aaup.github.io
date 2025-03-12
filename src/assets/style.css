@@ -81,32 +81,21 @@ h2 {
 article {
     margin: 0;
     padding-bottom: 1em;
+    margin-left: 1em;
 }
 
 article header {
     color: #404040;
     font-style: italic;
     margin-bottom: 1em;
-}
-
-article p {
-    padding-left: 1em;
-}
-
-article ul {
-    margin-left: 1em;
+    margin-left: -1em;
 }
 
 article li {
     margin-bottom: 1em;
 }
 
-article h3 {
-    padding-left: 1em;
-}
-
 article h4 {
-    padding-left: 1em;
     font-style: italic;
     font-weight: normal;
 }
