@@ -17,7 +17,7 @@
     "fs-extra": "^11.3.0",
     "glob": "^11.0.1",
     "luxon": "^3.6.1",
-    "marked": "^15.0.8"
+    "marked": "^15.0.9"
   },
   "devDependencies": {
     "serve": "^14.2.4"
