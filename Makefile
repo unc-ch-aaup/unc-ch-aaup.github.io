@@ -10,7 +10,7 @@ build: install
 	node ./scripts/build
 
 serve: build
-	npx serve -l 54321 ./site
+	npx serve -l 8080 ./site
 
 publish: build
 	./scripts/publish
